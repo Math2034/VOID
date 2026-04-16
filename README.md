@@ -63,7 +63,6 @@ Two colors only. The constraint is the identity.
 - Poster-style hierarchy throughout
 
 ### Layout Inspiration
-- Underground rave flyers from the 90s and early 2000s
 - Screen-printed and risograph poster culture
 - Grain and noise textures to simulate print imperfection
 
