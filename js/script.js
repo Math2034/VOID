@@ -1,7 +1,7 @@
 // js/script.js - EVENTO 15/05/2026
 document.addEventListener('DOMContentLoaded', function() {
     
-    // DATA DO EVENTO: 15 ABRIL 2026 - 22h
+    // DATA DO EVENTO: 15 MAIO 2026 - 22h
     const eventDate = new Date('2026-05-15T22:00:00').getTime();
     let eventEnded = false;
     
