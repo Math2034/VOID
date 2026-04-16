@@ -2,7 +2,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     
     // DATA DO EVENTO: 15 ABRIL 2026 - 22h
-    const eventDate = new Date('2026-04-15T22:00:00').getTime();
+    const eventDate = new Date('2026-05-15T22:00:00').getTime();
+    let eventEnded = false;
     
     function updateCountdown() {
         const now = new Date().getTime();
@@ -34,9 +35,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // EVENTO ACABOU
         if (distance < 0) {
+            eventEnded = true;
             document.querySelector('.countdown-label').textContent = 'SOLD OUT';
             document.querySelector('.countdown-timer').innerHTML = 
-                '<div style="grid-column: 1/-1; font-size: 3rem; padding: 2rem;">EVENTO AGOTADO</div>';
+                '<div style="grid-column: 1/-1; font-size: 3rem; padding: 2rem;">EVENT SOLD OUT</div>';
         }
     }
     
@@ -56,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Notificação aleatória a cada 10-20s
 setInterval(() => {
+    if (eventEnded) return;
     const notif = document.createElement('div');
     notif.className = 'sale-notification';
     notif.textContent = '🎫 TICKET SOLD!';
