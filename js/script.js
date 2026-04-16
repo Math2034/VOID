@@ -1,4 +1,4 @@
-// js/script.js - EVENTO 15/04/2026
+// js/script.js - EVENTO 15/05/2026
 document.addEventListener('DOMContentLoaded', function() {
     
     // DATA DO EVENTO: 15 ABRIL 2026 - 22h
