@@ -28,6 +28,10 @@ Every design decision reinforces a single emotional goal:
 
 > *"I need to be there."*
 
+## Portfolio note
+
+VOID is a fictional event concept created for portfolio demonstration. The date, artist names, ticket prices, sold-out messages and imagery are illustrative; no real tickets are sold through this page.
+
 ---
 
 ## Objective
@@ -93,6 +97,10 @@ Every element answers it:
 - Ticket tiers with scarcity design
 - Fully responsive — mobile-first
 - Zero dependencies — pure HTML, CSS, JS
+
+## Practical evidence
+
+This project demonstrates semantic HTML structure, responsive CSS, a JavaScript countdown, guarded smooth-scroll interactions and conversion-focused content hierarchy. The implementation is documented as a personal project, not as commercial event-production experience.
 
 ---
 

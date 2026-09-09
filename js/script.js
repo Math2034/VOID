@@ -1,10 +1,10 @@
-// js/script.js - EVENTO 15/05/2026
+// js/script.js - countdown and interaction for the event concept
+let eventEnded = false;
+
 document.addEventListener('DOMContentLoaded', function() {
     
     // DATA DO EVENTO: 15 MAIO 2026 - 22h
     const eventDate = new Date('2026-05-15T22:00:00').getTime();
-    let eventEnded = false;
-    
     function updateCountdown() {
         const now = new Date().getTime();
         const distance = eventDate - now;
@@ -49,9 +49,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // SMOOTH SCROLL
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
+            const targetSelector = this.getAttribute('href');
+            if (!targetSelector || targetSelector === '#') return;
+
+            const target = document.querySelector(targetSelector);
+            if (!target) return;
+
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            target?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         });
     });
 });
